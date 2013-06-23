@@ -1,0 +1,24 @@
+# .gitignore for configs
+# ignore files and dirs 
+
+*~
+etc/
+#*.rst
+*.pyc
+backup.py
+*.log
+
+# ignore APK binary 
+*.apk
+bin/
+gen/
+.settings/
+local.properties
+*.img
+
+
+# tar-balls system
+*.gz
+*.tar
+*.bz2
+*.pdf

@@ -1,0 +1,10 @@
+# commit.template
+# this file is use to set default message when we commit
+
+Subject:
+
+Description:
+
+
+
+
