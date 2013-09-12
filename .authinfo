@@ -1,0 +1,4 @@
+# replace PASSWORD with your password
+machine imap.gmail.com login iclcoolster@gmail.com password PASSWORD
+machine imap.gmail.com login iclcoolster@gmail.com password PASSWORD port 993
+machine smtp.gmail.com login iclcoolster@gmail.com password PASSWORD port 587
