@@ -8,7 +8,7 @@ etc/
 backup.py
 *.log
 
-# ignore APK binary 
+# ignore APK binary
 *.apk
 bin/
 gen/

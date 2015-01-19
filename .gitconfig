@@ -1,16 +1,25 @@
-[user]
-	name = psachin
-	email = iclcoolster@gmail.com
+[include]
+	; user.name & user.email
+	path = ~/.gitconfig.local
 [core]
 	editor = emacsclient -nw
-	excludesfile = /home/sachin/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-;	gitproxy=http://10.101.11.108:3128
+
+	; Don't trust file modes
+	filemode = false
+
+	deltaBaseCacheLimit = 1G
+	; gitproxy=http://10.101.11.108:3128
 [alias]
+	a = add
+	unstage = reset HEAD
+	u = add -u
 	co = checkout
 	br = branch
 	ci = commit
 	st = status
+	s = status -sb
 	last = log --pretty=format:\"%h - %an, %ar : %s\"
 	logg = log -p -l 2
 	df = diff
@@ -36,11 +45,13 @@
         changed = green
         untracked = cyan
 [color "diff"]
-        whitespace = red reverse	
+        whitespace = red reverse
 [commit]
-	template = /home/sachin/.gitmessage.txt
+	template = ~/.gitmessage.txt
 [http]
-;	proxy = http://10.101.11.108:3128
 	postBuffer = 524288000
+	; proxy = http://10.101.11.108:3128
 [push]
 	default = matching
+[help]
+	autocorrect = 1
