@@ -2,15 +2,15 @@
 	; user.name & user.email
 	path = ~/.gitconfig.local
 [core]
+	abbrev = 12
 	editor = emacsclient -nw
 	excludesfile = ~/.gitignore_global
-	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 	; Don't trust file modes
 	filemode = false
 
 	deltaBaseCacheLimit = 1G
-	; gitproxy=http://10.101.11.108:3128
+	ignorecase = true
 [alias]
 	a = add
 	unstage = reset HEAD
@@ -22,6 +22,7 @@
 	s = status -sb
 	last = log --pretty=format:\"%h - %an, %ar : %s\"
 	logg = log -p -l 2
+	logs = log --stat
 	df = diff
 	dc = diff --cached
         lg = log -p
@@ -46,6 +47,8 @@
         untracked = cyan
 [color "diff"]
         whitespace = red reverse
+[pretty]
+	fixes = Fixes: %h (\"%s\")
 [commit]
 	template = ~/.gitmessage.txt
 [http]
@@ -55,3 +58,11 @@
 	default = matching
 [help]
 	autocorrect = 1
+[log]
+	date = relative
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = iclcoolster@gmail.com
+	smtpServerPort = 587
+	suppresscc = self

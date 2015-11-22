@@ -3,3 +3,5 @@
 	email = iclcoolster@gmail.com
 [github]
 	user = psachin
+[sendemail]
+	smtpPass = PASSWORD

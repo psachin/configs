@@ -38,7 +38,7 @@ alternative_order text/plain text/html *
 auto_view text/html
 bind editor <Tab> complete-query
 bind editor ^T complete
-bind editor <space> noop 
+bind editor <space> noop
 
 # Gmail-style keyboard shortcuts
 macro index,pager y "<enter-command>unset trash\n <delete-message>" "Gmail archive message"
@@ -47,3 +47,11 @@ macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 macro index,pager gs "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
 macro index,pager gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+
+# -------- Alternate config --------------
+# set sendmail="/usr/local/bin/esmtp"
+# set envelope_from=yes
+# set from="psachin <iclcoolster@gmail.com>"
+# set use_from=yes
+# set edit_headers=yes
+# ----------------------------------------
