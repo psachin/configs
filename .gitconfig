@@ -24,7 +24,7 @@
 	logg = log -p -l 2
 	logs = log --stat
 	df = diff
-	dc = diff --cached
+	dfc = diff --cached
         lg = log -p
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
         lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
@@ -60,9 +60,5 @@
 	autocorrect = 1
 [log]
 	date = relative
-[sendemail]
-	smtpEncryption = tls
-	smtpServer = smtp.gmail.com
-	smtpUser = iclcoolster@gmail.com
-	smtpServerPort = 587
-	suppresscc = self
+[rerere]
+	enabled = true

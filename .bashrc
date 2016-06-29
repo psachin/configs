@@ -8,7 +8,7 @@ alias lll='ls -al --color'
 alias ll='ls -l --color'
 alias srch='find . -type f -iname'
 alias srchd='find . -type d -iname'
-alias dh='df -h' 
+alias dh='df -h'
 
 alias l='ls -lF --group-directories-first --color=always'
 alias d='ls -F --group-directories-first --color=always'
@@ -21,7 +21,7 @@ alias emc='emacsclient -nw'
 alias mnt='mount | column -t | grep -i /dev/[shl][dro] | sort'
 alias zip='zip -9'         # will zip witg max compression [usage: zip <archives>.zip file(s)]
                            # example: zip pics.zip bella.png wallpaper.jpg
-alias xtm='xterm -sl 2000 -bg black -fg green -e $SHELL -l'			   
+alias xtm='xterm -sl 2000 -bg black -fg green -e $SHELL -l'
 alias rm='rm -iv'
 alias ej='eject'
 alias cl='eject -t'
@@ -68,7 +68,7 @@ export PATH=/home/sachin/Downloads/eclipse:$PATH
 # depot_tools for chromium
 #export PATH=/home/sachin/Downloads/chromium4android/depot_tool:$PATH
 
-# julia path 
+# julia path
 export PATH=/home/sachin/github/julia:$PATH
 
 # codesourcery
@@ -83,4 +83,3 @@ export PATH=/home/sachin/github/sunxi-tools:$PATH
 # octopress setup
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
-

@@ -1,0 +1,14 @@
+[user]
+	name = Sachin
+	email = iclcoolster@gmail.com
+[github]
+	user = psachin
+[gitlab]
+	user = psachin
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = iclcoolster@gmail.com
+	smtpPass = MYPASSWORD
+	smtpServerPort = 587
+	suppresscc = self

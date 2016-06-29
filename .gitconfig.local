@@ -1,7 +1,10 @@
 [user]
-	name = sachin
-	email = iclcoolster@gmail.com
+	name = Sachin Patil
+	email = "(none)"
+	signingkey = E5F9CE4862AA06E2
 [github]
 	user = psachin
-[sendemail]
-	smtpPass = PASSWORD
+[gitlab]
+	user = psachin
+[gitreview]
+	username = psachin
