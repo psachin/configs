@@ -1,6 +1,7 @@
 [include]
 	; user.name & user.email
 	path = ~/.gitconfig.local
+	path = ~/.gitconfig.global
 [core]
 	abbrev = 12
 	editor = emacsclient -nw

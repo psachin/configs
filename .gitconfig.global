@@ -5,9 +5,11 @@
 	user = psachin
 [gitlab]
 	user = psachin
+[url "https://"]
+	insteadOf = git://
 [sendemail]
 	smtpEncryption = tls
-	smtpServer = smtp.gmail.com
+	smtpServer = smtp.googlemail.com
 	smtpUser = iclcoolster@gmail.com
 	smtpPass = MYPASSWORD
 	smtpServerPort = 587

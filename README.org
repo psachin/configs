@@ -1,1 +1,29 @@
 * My personal configs
+
+** Usage
+
+   - Clone this repo
+
+	 /Note/: This may overwrite your own config files. Make sure you
+     backup existing files before you clone this repo to =$HOME=
+
+	 #+BEGIN_SRC sh
+       # Clone this repo to you $HOME directory
+       git clone https://github.com/psachin/config.git ~/
+
+       # Optionally if you want to configure weechat, initialize submodule
+       cd ~/
+       git submodule init
+       git submodule update
+	 #+END_SRC
+
+   - Make changes to config files as needed
+
+** Weechat
+
+   - Visit [[https://github.com/psachin/.weechat][https://github.com/psachin/.weechat]] to learn more about
+     weechat configuration
+
+** License
+
+   GNU GPL version 3.
