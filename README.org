@@ -9,7 +9,7 @@
 
 	 #+BEGIN_SRC sh
        # Clone this repo to you $HOME directory
-       git clone https://github.com/psachin/config.git ~/
+       git clone https://github.com/psachin/configs.git ~/
 
        # Optionally if you want to configure weechat, initialize submodule
        cd ~/
@@ -17,12 +17,12 @@
        git submodule update
 	 #+END_SRC
 
-   - Make changes to config files as needed
+   - Make changes to config files as needed.
 
 ** Weechat
 
    - Visit [[https://github.com/psachin/.weechat][https://github.com/psachin/.weechat]] to learn more about
-     weechat configuration
+     weechat configuration.
 
 ** License
 
