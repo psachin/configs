@@ -1,9 +1,12 @@
 [include]
-	; user.name & user.email
+	; user.email & sendemail.smtpUser
 	path = ~/.gitconfig.local
-	path = ~/.gitconfig.global
+[user]
+       name = Sachin Patil
+       signingkey = 62AA06E2
 [core]
 	abbrev = 12
+	autocrlf = input
 	editor = emacsclient -nw
 	excludesfile = ~/.gitignore_global
 
@@ -24,13 +27,14 @@
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	last = log --pretty=format:\"%h - %an, %ar : %s\"
 	logg = log -p -l 2
+	loggg = log -p --format=fuller
 	logs = log --stat
 	df = diff
 	dfc = diff --cached
 	lg = log -p
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    ls = ls-files
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ls = ls-files
 	ign = ls-files -o -i --exclude-standard
 	type = cat-file -t
 	dump = cat-file -p
@@ -56,7 +60,7 @@
 [commit]
 	template = ~/.gitmessage.txt
 [http]
-	#postBuffer = 524288000
+	# postBuffer = 524288000
 	; proxy = http://10.101.11.108:3128
 [push]
 	default = matching
@@ -66,3 +70,16 @@
 	date = relative
 [rerere]
 	enabled = true
+[credential]
+       helper = store
+[github]
+       user = psachin
+[gitlab]
+       user = psachin
+[gitreview]
+       username = psachin
+[sendemail]
+       smtpEncryption = tls
+       smtpServer = smtp.gmail.com
+       smtpServerPort = 587
+       suppresscc = all
